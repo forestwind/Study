@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "Strategy.h"
 #include "Singleton.h"
+#include "State.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -16,6 +17,15 @@ int _tmain(int argc, _TCHAR* argv[])
 	SingletonClient singletonClient;
 
 	singletonClient.play();
+
+	cout << endl;
+
+
+	StateClient stateClient;
+
+	stateClient.Play();
+
+	cout << endl;
 
 	return 0;
 }
