@@ -5,6 +5,7 @@
 #include "Strategy.h"
 #include "Singleton.h"
 #include "State.h"
+#include "Command.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -27,6 +28,12 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	cout << endl;
 
+	
+	CommandClient commandClient;
+	
+	commandClient.Play();
+
+	cout << endl;
 	return 0;
 }
 
