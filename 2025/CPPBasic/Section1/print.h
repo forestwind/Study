@@ -1,0 +1,22 @@
+
+#pragma once
+#include <format>
+#include <iostream>
+#include <string_view>
+
+// 임시 print, println
+namespace std
+{
+    template<class... Args>
+    inline void print(std::string_view fmt, const Args&... args)
+    {
+        auto s = std::vformat(fmt, std::make_format_args(args...));
+        std::cout << s;
+    }
+    template<class... Args>
+    inline void println(std::string_view fmt, const Args&... args)
+    {
+        auto s = std::vformat(fmt, std::make_format_args(args...));
+        std::cout << s << '\n';
+    }
+}
