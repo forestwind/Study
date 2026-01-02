@@ -301,3 +301,10 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+*.obj
+*.exe
+
+# VS Code 설정 폴더 (하위 파일 전부 제외)
+.vscode/
